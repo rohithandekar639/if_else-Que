@@ -1,0 +1,10 @@
+# Input a character from the user
+char = input("Enter a character: ")
+
+if len(char) == 1 and char.isalpha():
+    if char in "aeiouAEIOU":
+        print(f"{char} is a vowel.")
+    else:
+        print(f"{char} is a consonant.")
+else:
+    print("Invalid input.")
