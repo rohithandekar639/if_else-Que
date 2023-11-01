@@ -1,0 +1,16 @@
+side1 = float(input("Enter the length of the first side :"))
+side2 = float(input("Enter the length of the second side :"))
+side3 = float(input("Enter the length of the third side :"))
+
+if side1 == side2 == side3:
+    triangle_type="eqilatral"
+
+elif side1 == side2 or side1 == side3 or side2 == side3:
+    triangle_type="isosceles"
+
+else :
+    triangle_type="scalene"
+
+print(f"The triangle side length {side1} , {side2} and {side3} is a {triangle_type} triangle")
+
+
