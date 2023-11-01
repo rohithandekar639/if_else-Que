@@ -1,0 +1,10 @@
+student_marks=int(input("enter a marks"))
+
+# by using if else
+
+if student_marks >= 90:
+    print("grade A")
+elif student_marks >= 80:
+    print("grade B")
+else:
+    print("grade C")
