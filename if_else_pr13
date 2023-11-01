@@ -1,0 +1,28 @@
+# Input a year from the user
+year = int(input("Enter a year: "))
+
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            leap_year = True
+            century_year = True
+        else:
+            leap_year = False
+            century_year = True
+    else:
+        leap_year = True
+        century_year = False
+else:
+    leap_year = False
+    century_year = False
+
+# Print the results
+if leap_year:
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
+
+if century_year:
+    print(f"{year} is a century year.")
+else:
+    print(f"{year} is not a century year.")
