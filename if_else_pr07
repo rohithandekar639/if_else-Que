@@ -1,0 +1,15 @@
+def calculate_absolute_value(number):
+    if number < 0:
+        return -number
+    else:
+        return number
+
+# Test the function with some examples
+num1 = -5
+num2 = 10
+
+abs_num1 = calculate_absolute_value(num1)
+abs_num2 = calculate_absolute_value(num2)
+
+print(f"The absolute value of {num1} is {abs_num1}")
+print(f"The absolute value of {num2} is {abs_num2}")
