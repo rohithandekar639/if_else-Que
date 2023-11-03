@@ -1,0 +1,11 @@
+#25. Write a Python script to determine the type of a character (uppercase, lowercase, or special) using elif
+#statements.
+
+char = input("Enter the character:")
+
+if char.isupper():
+    print("The character is uppercase")
+elif char.islower():
+    print("The character is lowercase")
+else:
+    print("the character is special")
