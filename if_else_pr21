@@ -1,0 +1,16 @@
+# Input the score from the user
+score = float(input("Enter the score: "))
+
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+# Display the assigned grade
+print(f"The grade for the score {score} is: {grade}")
