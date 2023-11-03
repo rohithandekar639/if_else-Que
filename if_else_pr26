@@ -1,0 +1,17 @@
+
+purchase_amount = float(input("Enter the purchase amount: "))
+
+# Initialize discount rate and discounted price variables
+discount_rate = 0.0
+discounted_price = 0.0
+
+if purchase_amount >= 1000:
+    discount_rate = 0.10  # 10% discount for purchase >= 1000
+elif purchase_amount >= 500:
+    discount_rate = 0.05  # 5% discount for purchase >= 500
+
+discounted_price = purchase_amount - (purchase_amount * discount_rate)
+
+print(f"Purchase Amount: ${purchase_amount:.2f}")
+print(f"Discount Rate: {discount_rate * 100}%")
+print(f"Discounted Price: ${discounted_price:.2f}")
