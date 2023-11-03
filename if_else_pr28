@@ -1,0 +1,22 @@
+
+angle1 = float(input("Enter the first angle (in degrees): "))
+angle2 = float(input("Enter the second angle (in degrees): "))
+angle3 = float(input("Enter the third angle (in degrees): "))
+angle4 = float(input("Enter the fourth angle (in degrees): "))
+side1 = float(input("Enter the length of the first side: "))
+side2 = float(input("Enter the length of the second side: "))
+side3 = float(input("Enter the length of the third side: "))
+side4 = float(input("Enter the length of the fourth side: "))
+
+if angle1 == angle2 == angle3 == angle4 == 90:
+    quadrilateral_type = "Rectangle"
+elif angle1 == angle2 == angle3 == angle4 != 90:
+    quadrilateral_type = "Rhombus"
+elif angle1 == angle2 == angle3 == angle4 == 90 and side1 == side2 and side2 == side3 and side3 == side4:
+    quadrilateral_type = "Square"
+elif side1 == side2 == side3 == side4:
+    quadrilateral_type = "Parallelogram"
+else:
+    quadrilateral_type = "Quadrilateral"
+
+print(f"The given figure is a {quadrilateral_type}.")
