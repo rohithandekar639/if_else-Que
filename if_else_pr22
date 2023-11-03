@@ -1,0 +1,15 @@
+#22. Implement a program to determine the type of a triangle based on its angles
+
+
+angle1 = int(input("Enter the first angle "))
+angle2 = int(input("Enter the second angle "))
+angle3 = int(input("Enter the third angle "))
+
+if angle1 == angle2 == angle3 == 60:
+    angle ="Eqilateral Triangle"
+elif angle1 == angle2 or angle1 == angle3 or angle2 ==angle3:
+    angle ="Isosceles"
+else :
+    angle ="scalene"
+
+print(f"the triangle is {angle} triagle based on its angle" )
