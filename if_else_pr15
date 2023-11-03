@@ -1,0 +1,6 @@
+person = int(input("Enter a age of person"))
+
+if person >= 13 and person <= 19:
+    print("The person is teenager")
+else:
+    print("The person is not teenager")
