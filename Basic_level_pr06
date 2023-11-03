@@ -1,0 +1,15 @@
+6. Write a program to classify a triangle based on its sides' lengths.
+
+side1 = float(input("Enter the length of the first side: "))
+side2 = float(input("Enter the length of the second side: "))
+side3 = float(input("Enter the length of the third side: "))
+
+if side1 == side2 == side3:
+    triangle_type = "Equilateral Triangle"
+elif side1 == side2 or side1 == side3 or side2 == side3:
+    triangle_type = "Isosceles Triangle"
+else:
+    triangle_type = "Scalene Triangle"
+
+# Print the classification of the triangle
+print("The triangle is a", triangle_type)
