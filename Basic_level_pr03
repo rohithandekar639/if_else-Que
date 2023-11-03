@@ -1,0 +1,11 @@
+#3. Write a program to find the maximum of two given numbers using conditional statements.
+
+num1 =float(input("Enter a first number:"))
+num2 =float(input("Enter a second number:"))
+
+if num1 > num2:
+    max_num=num1
+
+else:
+    max_num=num2
+print("The maximum no is",max_num)
