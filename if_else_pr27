@@ -1,0 +1,17 @@
+
+consumption = float(input("Enter the electricity consumption in kilowatt-hours: "))
+
+bill_amount = 0
+rate_per_kWh = 0
+
+if consumption <= 100:
+    rate_per_kWh = 0.10  # $0.10 per kWh for the first 100 kWh
+    bill_amount = consumption * rate_per_kWh
+elif consumption <= 300:
+    rate_per_kWh = 0.15  # $0.15 per kWh for the next 200 kWh (101-300)
+    bill_amount = 100 * 0.10 + (consumption - 100) * rate_per_kWh
+else:
+    rate_per_kWh = 0.20  # $0.20 per kWh for consumption above 300
+    bill_amount = 100 * 0.10 + 200 * 0.15 + (consumption - 300) * rate_per_kWh
+
+print(f"Electricity Bill: ${bill_amount:.2f} ({consumption} kWh at ${rate_per_kWh:.2f} per kWh)")
