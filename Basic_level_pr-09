@@ -1,0 +1,22 @@
+
+items = {
+    "item1": 10.00,
+    "item2": 15.00,
+    "item3": 20.00,
+}
+
+discount_percentage = 0.1  # 10% discount for items with a price above $15
+
+# Initialize the total cost
+total_cost = 0.0
+
+# Calculate the total cost with discounts
+for item, price in items.items():
+    if price > 15:
+        discounted_price = price - (price * discount_percentage)
+    else:
+        discounted_price = price
+    total_cost += discounted_price
+
+# Print the total cost
+print("Total cost of the shopping cart: $", total_cost)
