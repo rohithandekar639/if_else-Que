@@ -1,4 +1,4 @@
-6. Write a program to classify a triangle based on its sides' lengths.
+#6. Write a program to classify a triangle based on its sides' lengths.
 
 side1 = float(input("Enter the length of the first side: "))
 side2 = float(input("Enter the length of the second side: "))
