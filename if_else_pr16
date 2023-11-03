@@ -1,0 +1,11 @@
+#16. Develop a program that determines the type of angle based on its measure (acute, obtuse, or right).
+
+angle = float(input("Enter a angle"))
+
+if angle < 90 :
+    print("the angle is acute angle")
+
+elif angle > 90 :
+    print("the angle is obtuse angle")
+else :
+    print("the angle is right angle")
