@@ -1,0 +1,17 @@
+#4. Develop a program that calculates the grade of a student based on their exam score.
+
+score = float(input("Enter a exam score:"))
+
+if score >= 90:
+    Gread="A"
+elif score >=80:
+    Gread="B"
+elif score >=70:
+    Gread="c"
+elif score >=60:
+    Gread="D"
+elif score >=50:
+    Gread="E"
+else:
+    Gread="F"
+print("The student gread is.",Gread)
